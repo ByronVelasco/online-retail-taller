@@ -1,0 +1,50 @@
+DESCRIPCIÓN DEL SET DE DATOS - ONLINE RETAIL
+
+Este dataset contiene transacciones de una tienda en línea del Reino Unido registradas entre diciembre de 2010 y diciembre de 2011. 
+Cada fila representa un producto comprado como parte de una factura.
+
+Columnas incluidas:
+- InvoiceNo: Número de factura (entero).
+- StockCode: Código único del producto (texto).
+- Description: Nombre del producto (texto).
+- Quantity: Cantidad comprada (entero).
+- InvoiceDate: Fecha y hora de la transacción.
+- UnitPrice: Precio unitario del producto (decimal).
+- CustomerID: Identificador del cliente (entero).
+- Country: País del cliente (texto).
+
+El dataset permite analizar ventas, clientes, productos más comprados, comportamiento por país y evolución temporal.
+
+DESCRIPCIÓN DE LOS CAMPOS DEL DATASET
+
+1. InvoiceNo: Número entero que identifica la factura. Una misma factura puede tener múltiples productos. 
+   Se eliminó la codificación con 'C' que indicaba cancelaciones.
+
+2. StockCode: Código único del producto. Sirve para identificar artículos independientemente del nombre.
+
+3. Description: Nombre del producto. Se corrigieron valores vacíos o con signos de interrogación utilizando el StockCode.
+
+4. Quantity: Número de unidades vendidas de un producto en esa línea de factura. Siempre es mayor que cero tras la limpieza.
+
+5. InvoiceDate: Fecha y hora de la transacción. Permite análisis temporales de las ventas.
+
+6. UnitPrice: Precio unitario del producto en libras esterlinas. Todos los valores son positivos.
+
+7. CustomerID: Identificador numérico único del cliente. Se eliminaron registros con valores ausentes.
+
+8. Country: País de origen del cliente. Se estandarizó el texto y se reemplazó "UNSPECIFIED" por "UNITED KINGDOM".
+
+META-DATOS QUE SE PUEDEN GENERAR DEL DATASET
+
+1. Total de registros en el dataset: Cada fila representa un producto incluido en una factura.
+2. Total de facturas únicas (InvoiceNo).
+3. Total de productos distintos (StockCode).
+4. Total de descripciones únicas (Description).
+5. Total de clientes únicos (CustomerID).
+6. Total de países distintos (Country).
+7. Rango de fechas de facturación (InvoiceDate).
+8. Total de artículos vendidos (suma de Quantity).
+9. Ingreso total estimado (suma de Quantity * UnitPrice).
+
+Fuente de referencia: UCI Machine Learning Repository – Online Retail Dataset
+https://archive.ics.uci.edu/dataset/352/online+retail

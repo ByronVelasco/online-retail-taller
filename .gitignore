@@ -1,0 +1,12 @@
+# Carpetas temporales y archivos de caché
+__pycache__/
+*.pyc
+
+# Base de datos local (puede ser regenerada)
+*.db
+
+# Archivos ocultos o específicos del sistema
+.DS_Store
+
+# Archivos personales o sensibles
+.env

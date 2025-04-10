@@ -1,0 +1,21 @@
+Descripción de las Visualizaciones
+
+Gráfica 1: Top 10 productos más vendidos
+----------------------------------------
+Esta gráfica de barras horizontales muestra los diez productos con mayor cantidad total vendida durante el período de análisis. 
+Destacan "PAPER CRAFT , LITTLE BIRDIE" y "MEDIUM CERAMIC TOP STORAGE JAR", lo que sugiere que estos artículos tienen una gran aceptación 
+en el mercado. Esta visualización permite identificar rápidamente los productos más populares y orientar estrategias de inventario y promoción.
+
+Gráfica 2: Relación entre cantidad vendida e ingreso (todos los productos)
+--------------------------------------------------------------------------
+Esta gráfica de dispersión muestra la relación entre la cantidad vendida por transacción (eje X) y el ingreso generado por transacción (eje Y) para todos los productos en el dataset.
+Se observa que la mayoría de los puntos se concentran cerca del origen, lo que indica que en general las transacciones involucran pocas unidades vendidas y generan ingresos bajos a moderados. Sin embargo, existen unos pocos puntos alejados del grupo principal (outliers), que representan transacciones con cantidades inusualmente altas o ingresos extremadamente elevados. Estos casos podrían corresponder a ventas mayoristas, compras masivas o errores en el registro, y merecen ser investigados con más detalle.
+La visualización permite detectar patrones generales de comportamiento del negocio, así como identificar posibles valores atípicos que pueden influir en el análisis estadístico o en la toma de decisiones.
+
+
+Gráfica 3: Evolución mensual de las ventas
+------------------------------------------
+Esta gráfica de líneas muestra el comportamiento del total de ventas por mes. Se observa una tendencia general de crecimiento a lo largo del año,
+con un pico importante en noviembre, posiblemente vinculado a compras navideñas o eventos promocionales. 
+La caída en diciembre puede explicarse por la falta de datos (solo hay registros hasta el 9 de diciembre).
+Esta visualización permite comprender la estacionalidad del negocio y planificar recursos o campañas de marketing.
