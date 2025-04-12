@@ -43,9 +43,6 @@ plt.close()
 
 # ------------------- GRÁFICA 2: Dispersión Ingreso vs. Cantidad ------------------- #
 
-# Calcular ingreso por transacción
-df["Total"] = df["Quantity"] * df["UnitPrice"]
-
 # Crear gráfico de dispersión para todos los productos
 plt.figure(figsize=(10, 6))
 plt.scatter(df["Quantity"], df["Total"], alpha=0.5, s=10)
@@ -56,7 +53,6 @@ plt.grid(True)
 plt.tight_layout()
 plt.savefig("docs/grafica_2_global_dispersion_ingreso_cantidad.png")
 plt.close()
-
 
 # ------------------- GRÁFICA 3: Evolución mensual de ventas ------------------- #
 

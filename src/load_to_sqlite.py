@@ -16,10 +16,6 @@ DB_PATH = os.path.join(SCRIPT_DIR, "..", "online_retail.db")
 
 print("Cargando archivo limpio...")
 df = pd.read_csv(CSV_PATH, parse_dates=['InvoiceDate'])  # Asegura que la fecha se cargue bien
-
-# Si es necesario, puedes forzar tipos aquí de nuevo
-# df['CustomerID'] = df['CustomerID'].astype(int)  # ya debe venir bien
-
 print(f"Registros cargados: {len(df)}")
 
 # ------------------- GUARDADO EN SQLITE ------------------- #

@@ -1,6 +1,6 @@
 DESCRIPCIÓN DEL SET DE DATOS - ONLINE RETAIL
 
-Este dataset contiene transacciones de una tienda en línea del Reino Unido registradas entre diciembre de 2010 y diciembre de 2011. 
+Este dataset contiene transacciones de una tienda en línea del Reino Unido registradas entre 1/12/2010 y 9/12/2011. 
 Cada fila representa un producto comprado como parte de una factura.
 
 Columnas incluidas:
